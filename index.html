@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manual de Programación </title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 2rem 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .header-content {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    header img {
+      width: 100px;
+      height: auto;
+      border-radius: 50%;
+      opacity: 0;
+      transform: translateX(-50%);
+      animation: slideInFromLeft 1.5s ease-out forwards;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+      opacity: 0;
+      transform: translateY(50%);
+      animation: fadeInUp 1.5s ease-out forwards 0.5s;
+    }
+
+    header p {
+      margin: 1rem 0 0;
+      opacity: 0;
+      transform: translateY(50%);
+      animation: fadeInUp 1.5s ease-out forwards 0.8s;
+    }
+
+    nav {
+      background-color: #444;
+      padding: 1rem 0;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #00bcd4;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    section h2 {
+      color: #333;
+      margin-bottom: 15px;
+    }
+
+    section p {
+      margin-bottom: 15px;
+    }
+
+    .video-container {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #333;
+      color: white;
+      padding: 1rem 0;
+      margin-top: 20px;
+    }
+    /* Animaciones */
+    @keyframes slideInFromLeft {
+      from {
+        opacity: 0;
+        transform: translateX(-50%);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(50%);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+
+      
+      <h1>MANUAL DE PROGRAMACIÓN</h1>
+      <p>Descubre cómo construir y gestionar sitios web profesionales</p>
+    </div>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="INDICE.html">indice</a></li>
+     
+     
+    </ul>
+  </nav>
+<center><h2>REGISTRATE</h2>
+    <form action="registrar.php" method="post">
+        <label for="usuario">Usuario:</label>
+        <input type="text" id="usuario" name="usuario" required><br><br>
+
+        <label for="contraseña">Contraseña:</label>
+        <input type="password" id="contraseña" name="codigo_acceso" required maxlength="4"><br><br>
+
+        <input type="submit" value="Registrar">
+</center>
+  <section>
+    <center><h2>¿Qué es HTML?</h2></center>
+    <p>
+      HTML (HyperText Markup Language) es el lenguaje estándar para crear y diseñar páginas web. Permite estructurar y organizar el contenido de una página con elementos como texto, imágenes, videos y más.
+    </p>
+
+    <center><h2>Beneficios de HTML:</h2></center>
+    <ul>
+      <li>Fácil de aprender y utilizar.</li>
+      <li>Es la base de todas las páginas web modernas.</li>
+      <li>Compatible con todos los navegadores.</li>
+    </ul>
+
+      <center><h2>¿Dónde se utilizan las páginas web?</h2></center>
+       <p>
+        Las páginas web son utilizadas en diversos contextos como publicidad, entretenimiento, educación y
+        comercio electrónico. Cada página web puede ser diseñada para servir un propósito específico.
+      </p>
+
+
+      <center><h2>¿Cuál es la diferencia entre páginas estáticas y dinámicas?</h2></center>
+      <p><center>
+        Las páginas estáticas muestran contenido fijo, mientras que las páginas dinámicas generan contenido en
+        tiempo real basado en interacciones del usuario o información proveniente de bases de datos.
+      </p></center>
+<center><img src="C:\Users\rosjo\OneDrive\Documentos\Examen 3er parcial\3 Examen\estaticas dimanicas.jpeg" alt="Ejemplo de diseño web"><center>
+
+
+      <center><h2>Página web vs Portal web</h2></center>
+      <p><center>
+        Una página web es un documento único dentro de internet, mientras que un portal web es una colección de
+        páginas organizadas que ofrecen acceso a múltiples recursos, servicios o herramientas en un solo lugar.
+      </p></center>   
+      <center><img src="C:\Users\rosjo\OneDrive\Documentos\Examen 3er parcial\3 Examen\diceño web.webp" alt="Ejemplo de diseño web"><center>
+
+     
+      <div class="video-container">
+        <h3>Ejemplo Visual</h3>
+        <video controls width="600">
+          <source src="https://youtu.be/BUyaHveV9rY?si=s0HztRBPawwotEXH type"="video/mp4">
+          Tu navegador no soporta el elemento de video.
+        </video>
+      </div>
+    </section>
+    </nav>
+  </body>
+</html>
